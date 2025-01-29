@@ -5,7 +5,7 @@ type Props = {}
 
 const Products = (props: Props) => {
   return (
-    <View>
+    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
       <Text>Products</Text>
     </View>
   )

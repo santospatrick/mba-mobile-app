@@ -1,6 +1,6 @@
-import { View, Text } from 'react-native'
 import React from 'react'
 import { Tabs } from 'expo-router'
+import { Store, User } from 'lucide-react-native'
 
 type Props = {}
 
@@ -15,13 +15,15 @@ const TabsLayout = (props: Props) => {
       <Tabs.Screen
         name="products"
         options={{
-          title: 'Produtos',
+          title: 'PRODUTOS',
+          tabBarIcon: ({ size, color }) => <Store size={size} color={color} />
         }}
       />
       <Tabs.Screen
         name="profile"
         options={{
-          title: 'Perfil',
+          title: 'PERFIL',
+          tabBarIcon: ({ size, color }) => <User size={size} color={color} />
         }}
       />
     </Tabs>

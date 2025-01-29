@@ -5,7 +5,7 @@ type Props = {}
 
 const Profile = (props: Props) => {
   return (
-    <View>
+    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
       <Text>Profile</Text>
     </View>
   )
